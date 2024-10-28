@@ -1,7 +1,7 @@
 import { useReducer } from "react";
 import { Route, Routes, useNavigate } from "react-router-dom";
 import Booking from "./Booking";
-import ConfirmedBooking from "./ConfirmedBooking";
+import ConfirmMsg from "./ConfirmMsg";
 import Header from "./Header";
 
 const Main = () => {
@@ -59,7 +59,7 @@ const Main = () => {
             />
           }
         />
-        <Route path="/confirmed" element={<ConfirmedBooking />} />
+        <Route path="/confirmed" element={<ConfirmMsg />} />
       </Routes>
     </main>
   );
